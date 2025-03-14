@@ -8,6 +8,7 @@ __pycache__/
 
 # Ignore model outputs or large files
 uploads/
+artifacts/
 
 # Ignore static files if they are generated
 static/
