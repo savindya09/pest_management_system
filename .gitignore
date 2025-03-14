@@ -8,7 +8,7 @@ __pycache__/
 
 # Ignore model outputs or large files
 uploads/
-apps/artifacts/pests.h5
+apps/pestmanagement/artifacts/pests.h5
 
 # Ignore static files if they are generated
 static/
