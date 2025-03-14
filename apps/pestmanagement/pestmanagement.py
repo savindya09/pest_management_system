@@ -5,9 +5,8 @@ import tensorflow as tf
 from tensorflow import keras
 
 # Load Pest Detection Model
-model = tf.keras.models.load_model(
-    r'C:\Users\Savindya Sandeepani\Downloads\pest_management\apps\artifacts\pests.h5'
-)
+model = tf.keras.models.load_model('apps/pestmanagement/artifacts/pests.h5')
+
 model.compile(
     optimizer='Adam',
     loss='categorical_crossentropy',
@@ -34,7 +33,7 @@ def get_remedies(pest):
     """
     # Dynamically locate the 'data' folder inside your project
     base_dir = os.path.dirname(os.path.abspath(__file__))  # Get current directory
-    remedies_path = os.path.join(base_dir, '..', 'data', 'pest management.xlsx')
+    remedies_path = os.path.join(base_dir, '..', 'pestmanagement', 'data', 'pest management.xlsx')
 
     # Ensure the file exists before attempting to read
     if not os.path.exists(remedies_path):
